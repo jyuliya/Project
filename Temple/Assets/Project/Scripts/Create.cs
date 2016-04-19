@@ -15,7 +15,7 @@ public class Create : MonoBehaviour
         if (timeElapsed > 2f)
         {
             GameObject temp;
-            int zpos = Random.Range(-1, 2);
+            int zpos = Random.Range(0, 2);
             for (int i = 0; i < 5; ++i)
             {
                 temp = (GameObject)Instantiate(obj);
