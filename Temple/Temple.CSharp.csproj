@@ -72,33 +72,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GrassRoadRace\Script\CameraMove.cs" />
+    <Compile Include="Assets\Project\Scripts\CoinCreate.cs" />
     <Compile Include="Assets\Project\Scripts\Controller.cs" />
-    <Compile Include="Assets\Project\Scripts\Create.cs" />
     <Compile Include="Assets\Project\Scripts\CreateIsland.cs" />
     <Compile Include="Assets\Project\Scripts\Game.cs" />
     <Compile Include="Assets\Project\Scripts\GroundCreate.cs" />
     <Compile Include="Assets\Project\Scripts\Moving.cs" />
+    <Compile Include="Assets\Project\Scripts\ObtacleCreate.cs" />
     <Compile Include="Assets\Project\Scripts\RunnerControl.cs" />
     <Compile Include="Assets\Project\Scripts\Trigger.cs" />
-    <Compile Include="Assets\Scripts\Chaser.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint.cs" />
-    <Compile Include="Assets\Scripts\Controller.cs" />
-    <Compile Include="Assets\Scripts\CreateRandomize.cs" />
-    <Compile Include="Assets\Scripts\Damage.cs" />
-    <Compile Include="Assets\Scripts\EnemyMove.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Health.cs" />
-    <Compile Include="Assets\Scripts\Manager.cs" />
-    <Compile Include="Assets\Scripts\MouseLockCursor.cs" />
-    <Compile Include="Assets\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Scripts\SpawObject.cs" />
-    <Compile Include="Assets\Scripts\SpawnGameObjects.cs" />
-    <Compile Include="Assets\Scripts\TargetExit.cs" />
-    <Compile Include="Assets\Scripts\TimedObjectDestructor.cs" />
-    <Compile Include="Assets\Scripts\Treasure.cs" />
-    <Compile Include="Assets\Scripts\TriggerLevelLoad.cs" />
-    <Compile Include="Assets\Scripts\UIButtonLevelLoad.cs" />
-    <Compile Include="Assets\Scripts\UIButtonQuitGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

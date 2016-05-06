@@ -6,17 +6,19 @@ public class RunnerControl : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log(2);
     }
    
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        
         if (other.gameObject.name == "Cylinder(Clone)")
         {
             control.CoinCollected();
         }
-
+        if (other.gameObject.name == "Obtacle(Clone)")
+        {
+            control.obtacleTouch();
+        }
         Destroy(other.gameObject);
 
     }

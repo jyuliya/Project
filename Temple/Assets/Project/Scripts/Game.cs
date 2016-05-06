@@ -27,17 +27,25 @@ public class Game : MonoBehaviour {
             isGameOver = true;    // set the isGameOver flag to true if timeRemaining is zero
         }
     }
+
     public void CoinCollected()
     {
         float Rand = Random.Range(1, 10);
         if (Rand > 5)
         {
             timeRemaining += 1;
+        } else
+        {
+            timeRemaining -= 1;
         }
-        score += 10; //add time to the time remaining
+        score += 10;
     }
-    
-    
+
+    public void obtacleTouch()
+    {
+        isGameOver = true;
+    }
+
     void OnGUI()
     {
         //check if game is not over, if so, display the score and the time left
