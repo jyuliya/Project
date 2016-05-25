@@ -2,29 +2,30 @@
 using System.Collections;
 
 public class Game : MonoBehaviour {
-    public float timeRemaining = 10;   //Pre-earned time
-    float timeExtension = 3f;   //time to extend by on collecting powerup
-    float timeDeduction = 2f;   //time to reduce, on collecting the snag
+    public float timeRemaining = 10;   
+    float timeExtension = 3f;   
+    float timeDeduction = 2f;   
     float totalTimeElapsed = 0;
-    float score = 0f;      //total score
+    float score = 0f;      
     public bool isGameOver = false;
-    // Use this for initialization
+    private bool start = true;
+    
     void Start()
     {
-        Time.timeScale = 1;  // set the time scale to 1, to start the game world. This is needed if you restart the game from the game over menu
+        Time.timeScale = 1;
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        if (isGameOver)     //check if isGameOver is true
-            return;      //move out of the function
+        if (isGameOver)     
+            return;      
 
         totalTimeElapsed += Time.deltaTime;
-        timeRemaining -= Time.deltaTime; //decrement the time remaining by 1 sec every update
+        timeRemaining -= Time.deltaTime; 
         if (timeRemaining <= 0)
         {
-            isGameOver = true;    // set the isGameOver flag to true if timeRemaining is zero
+            isGameOver = true;    
         }
     }
 
@@ -48,6 +49,7 @@ public class Game : MonoBehaviour {
 
     void OnGUI()
     {
+       
         //check if game is not over, if so, display the score and the time left
         if (!isGameOver)
         {
@@ -60,22 +62,15 @@ public class Game : MonoBehaviour {
             Time.timeScale = 0; //set the timescale to zero so as to stop the game world
 
             //display the final score
-            GUI.Box(new Rect(Screen.width / 4, Screen.height / 4, Screen.width / 2, Screen.height / 2), "GAME OVER\nYOUR SCORE: " + (int)score);
+            GUI.Box(new Rect(Screen.width / 4, Screen.height / 6, Screen.width / 2, Screen.height / 2), "GAME OVER\nYOUR SCORE: " + (int)score);
 
             //restart the game on click
-            if (GUI.Button(new Rect(Screen.width / 4 + 10, Screen.height / 4 + Screen.height / 10 + 10, Screen.width / 2 - 20, Screen.height / 10), "RESTART"))
+            if (GUI.Button(new Rect(Screen.width / 4 + 10, Screen.height / 4 + Screen.height / 10 + 10, Screen.width / 2 - 20, Screen.height / 8), "RESTART"))
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
-
-            //load the main menu, which as of now has not been created
-            if (GUI.Button(new Rect(Screen.width / 4 + 10, Screen.height / 4 + 2 * Screen.height / 10 + 10, Screen.width / 2 - 20, Screen.height / 10), "MAIN MENU"))
-            {
-                Application.LoadLevel(1);
-            }
-
             //exit the game
-            if (GUI.Button(new Rect(Screen.width / 4 + 10, Screen.height / 4 + 3 * Screen.height / 10 + 10, Screen.width / 2 - 20, Screen.height / 10), "EXIT GAME"))
+            if (GUI.Button(new Rect(Screen.width / 4 + 10, Screen.height / 4 + 2 * Screen.height / 9 + 10, Screen.width / 2 - 20, Screen.height / 8), "EXIT GAME"))
             {
                 Application.Quit();
             }

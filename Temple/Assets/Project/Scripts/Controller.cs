@@ -7,7 +7,7 @@ public class Controller : MonoBehaviour {
 	public float gravity;
 	public float fallSpeed;
 	public float moveSpeed;
-    private object CrossPlatformInputManager;
+   // private object CrossPlatformInputManager;
 
 
 
@@ -35,15 +35,9 @@ public class Controller : MonoBehaviour {
 	void Fall(){
         if (!isGrounded)
         {
-            characterController.Move(new Vector2(0, -3) * Time.deltaTime);
+            characterController.Move(new Vector2(0, -8) * Time.deltaTime);
         }
 	}
-    /*
-	void IsGrounded ()
-	{
-        isGrounded = (Physics.Raycast(transform.position, -transform.up));  //, characterController.height/1.8F));
-	}
-    */
 
     void OnTriggerEnter(Collider other)
     {

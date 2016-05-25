@@ -1,0 +1,66 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: getPlatforms
+Cmd: disassembleShader
+  api=5 insize=8760 outsize=8760 ok=1
+Cmd: disassembleShader
+  api=5 insize=4705 outsize=4705 ok=1
+Cmd: disassembleShader
+  api=5 insize=4181 outsize=4181 ok=1
+Cmd: disassembleShader
+  api=5 insize=4770 outsize=4770 ok=1
+Cmd: disassembleShader
+  api=5 insize=4838 outsize=4838 ok=1
+Cmd: disassembleShader
+  api=5 insize=3921 outsize=3921 ok=1
+Cmd: disassembleShader
+  api=5 insize=4051 outsize=4051 ok=1
+Cmd: disassembleShader
+  api=5 insize=5860 outsize=5860 ok=1
+Cmd: disassembleShader
+  api=5 insize=3146 outsize=3146 ok=1
+Cmd: disassembleShader
+  api=5 insize=2582 outsize=2582 ok=1
+Cmd: disassembleShader
+  api=5 insize=5809 outsize=5809 ok=1
+Cmd: disassembleShader
+  api=5 insize=833 outsize=833 ok=1
+Cmd: disassembleShader
+  api=5 insize=5143 outsize=5143 ok=1
+Cmd: disassembleShader
+  api=5 insize=3061 outsize=3061 ok=1
+Cmd: disassembleShader
+  api=5 insize=833 outsize=833 ok=1
+Cmd: disassembleShader
+  api=5 insize=8492 outsize=8492 ok=1
+Cmd: disassembleShader
+  api=5 insize=6684 outsize=6684 ok=1
+Cmd: disassembleShader
+  api=5 insize=8417 outsize=8417 ok=1
+Cmd: disassembleShader
+  api=5 insize=10021 outsize=10021 ok=1
+Cmd: disassembleShader
+  api=5 insize=4350 outsize=4350 ok=1
+Cmd: disassembleShader
+  api=5 insize=4298 outsize=4298 ok=1
+Cmd: disassembleShader
+  api=5 insize=4311 outsize=4311 ok=1
+Cmd: disassembleShader
+  api=5 insize=4560 outsize=4560 ok=1
+Cmd: disassembleShader
+  api=5 insize=5322 outsize=5322 ok=1
+Cmd: disassembleShader
+  api=5 insize=5107 outsize=5107 ok=1
+Cmd: disassembleShader
+  api=5 insize=4992 outsize=4992 ok=1
+Cmd: disassembleShader
+  api=5 insize=6552 outsize=6552 ok=1
+Cmd: disassembleShader
+  api=5 insize=6223 outsize=6223 ok=1
+Cmd: disassembleShader
+  api=5 insize=872 outsize=872 ok=1
+Cmd: disassembleShader
+  api=5 insize=3921 outsize=3921 ok=1
+Cmd: disassembleShader
+  api=5 insize=5809 outsize=5809 ok=1
+Cmd: disassembleShader
+  api=5 insize=3061 outsize=3061 ok=1
